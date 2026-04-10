@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/* -----------------------------
+   CSS RESET (SAFE + MODERN)
+----------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* -----------------------------
+   BODY BASE STYLES
+----------------------------- */
+body {
+  @apply bg-gray-50 text-gray-800 antialiased;
+  font-family: var(--font-karla), sans-serif;
+}
+
+/* -----------------------------
+   TYPOGRAPHY SYSTEM
+----------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight text-gray-900;
+}
+
+h1 {
+  @apply text-4xl md:text-6xl;
+}
+
+h2 {
+  @apply text-3xl md:text-5xl;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl;
+}
+
+p {
+  @apply text-base md:text-lg leading-relaxed text-gray-600;
+}
+
+/* -----------------------------
+   LINKS & BUTTONS
+----------------------------- */
+a {
+  @apply transition-colors duration-200;
+}
+
+button {
+  @apply transition-all duration-200;
+}
+
+/* -----------------------------
+   LAYOUT UTILITIES (VERY IMPORTANT)
+----------------------------- */
+
+/* Section spacing */
+.section {
+  @apply py-20 md:py-24;
+}
+
+/* Container system */
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Center content */
+.center-flex {
+  @apply flex items-center justify-center;
+}
+
+/* Grid helpers */
+.grid-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* -----------------------------
+   CARD STYLES (SaaS look)
+----------------------------- */
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-6;
+}
+
+/* -----------------------------
+   GRADIENTS (optional but powerful)
+----------------------------- */
+.gradient-text {
+  @apply bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-r from-indigo-500 to-purple-600;
+}
+
+/* -----------------------------
+   SCROLLBAR (optional premium feel)
+----------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5b4fc;
+}

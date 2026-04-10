@@ -1,0 +1,9 @@
+{
+  "/companies/page": "app/companies/page.js",
+  "/login/page": "app/login/page.js",
+  "/signup/page": "app/signup/page.js",
+  "/page": "app/page.js",
+  "/activities/page": "app/activities/page.js",
+  "/startups/page": "app/startups/page.js",
+  "/institutions/page": "app/institutions/page.js"
+}
